@@ -1,0 +1,9 @@
+# config.yaml
+flutter_path: CHEMIN/VERS/VOTRE/FLUTTER
+
+qr_code:
+  enabled: true
+  save_file: true
+  show_in_command: true
+  size: 256
+  save_path: "./release-qr-code.png"

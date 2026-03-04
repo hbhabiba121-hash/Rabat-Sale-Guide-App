@@ -1,0 +1,78 @@
+name: test_simple
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI et Icônes
+  cupertino_icons: ^1.0.8
+  
+  # Équivalent de lucide-react (icônes)
+  # Flutter a Material Ions intégrés, mais pour plus de choix :
+  flutter_vector_icons: ^2.0.0
+  # ou
+  ionicons: ^0.2.2
+  
+  # Équivalent de clsx / tailwind-merge (utilitaires de classes)
+  # En Flutter, on n'a pas de classes CSS, mais on peut utiliser :
+  # - Des extensions pour les styles
+  # - Des packages pour le responsive
+  
+  # Navigation (équivalent de react-router)
+  go_router: ^14.0.0
+  
+  # State management (si nécessaire)
+  provider: ^6.1.0
+  # ou
+  riverpod: ^2.5.0
+  
+  # Pour les animations
+  animations: ^2.0.11
+  
+  # Pour le stockage local (si nécessaire)
+  shared_preferences: ^2.2.3
+  
+  # Pour les appels API (si nécessaire)
+  http: ^1.2.1
+  # ou
+  dio: ^5.4.3+1
+  
+  # Pour le cache d'images
+  cached_network_image: ^3.3.1
+  
+  # Pour les maps (si vous utilisez MapView.tsx)
+  #google_maps_flutter: ^2.6.1
+  # ou
+  #mapbox_gl: ^0.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  
+  # Outils de développement
+  build_runner: ^2.4.9
+  # Pour la génération de code avec go_router
+  go_router_builder: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  
+  # Assets - commentés temporairement
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  
+  # Fonts personnalisées (si vous utilisez des polices spécifiques)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700
